@@ -1,7 +1,7 @@
 # Django application
 Esta aplicação crud de biblioteca.
 
-## Como testar | Setup do ambiente 
+## Setup do ambiente 
 1. Clone o repositório 
 
 > https://github.com/carolinamaciel1/django-application.git
@@ -21,3 +21,5 @@ Esta aplicação crud de biblioteca.
 
 5. Suba o servidor django
 > py manage.py runserver 
+
+## Como testar
