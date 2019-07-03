@@ -1,5 +1,5 @@
 # Django application
-Esta aplicação crud de biblioteca.
+Aplicação crud de biblioteca.
 
 ## Setup do ambiente 
 1. Clone o repositório 
