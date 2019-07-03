@@ -4,7 +4,7 @@ Aplicação crud de biblioteca.
 ## Setup do ambiente 
 1. Clone o repositório 
 
-` https://github.com/carolinamaciel1/django-application.git´
+`https://github.com/carolinamaciel1/django-application.git´
 
 2. Crie uma máquina virtual para subir o servidor django 
 
