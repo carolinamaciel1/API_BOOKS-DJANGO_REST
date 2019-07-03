@@ -15,7 +15,6 @@ class CopyBookSerializer(ModelSerializer):
     """
     Serializer CopyBook fields
     """
-    book = BookSerializer()
     class Meta:
         model = CopyBook
         fields = '__all__'
