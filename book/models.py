@@ -10,7 +10,7 @@ class Book(models.Model):
     ----------
     book's name: str
         name of book
-    book's author str
+    book's author: str
         name of author of the book
     book's publishing company: str
         name of pushing company of the book
@@ -25,7 +25,7 @@ class Book(models.Model):
 
 class CopyBook(models.Model):
     """
-    A class used to represent a copy book in a library
+    A class used to represent a book copy in a library
 
     Attributes
     ----------
@@ -43,7 +43,7 @@ class CopyBook(models.Model):
 
 class RentBook(models.Model):
     """
-    A class used to represent a rent book in a library
+    A class used to represent a book rent in a library
 
     Attributes
     ----------
