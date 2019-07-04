@@ -97,15 +97,10 @@ url = "http://127.0.0.1:8000/books/"
 payload = {"name_book": "Livro Testando","author_book":"Autor Testando","registration_date":"2019-07-04"}
 headers = {
     'Authorization': "Basic YWRtaW46bm92YVNlbmhhQA==",
-    'User-Agent': "PostmanRuntime/7.15.0",
-    'Accept': "*/*",
-    'Cache-Control': "no-cache",
-    'Postman-Token': "e90a10d4-d170-473d-a996-949331ff02c8,6651e1d5-ed7a-4883-a07e-f06cfdb80208",
-    'Host': "127.0.0.1:8000",
-    'accept-encoding': "gzip, deflate",
-    'content-type': "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
-    'content-length': "428",
-    'Connection': "keep-alive",
+    'accept-encoding': "/",
+     'host': "127.0.0.1:8000",
+    'content-type': "application/json",
+    'connection': "keep-alive",
     'cache-control': "no-cache"
     }
 data = json.dumps(payload)
@@ -242,15 +237,10 @@ url = "http://127.0.0.1:8000/copybook/"
 payload = {"date_register":"2019-07-04","edition":1,"book":3}
 headers = {
     'Authorization': "Basic YWRtaW46bm92YVNlbmhhQA==",
-    'User-Agent': "PostmanRuntime/7.15.0",
-    'Accept': "*/*",
-    'Cache-Control': "no-cache",
-    'Postman-Token': "5f7918dd-7bff-4372-a4e5-a5b72a386009,3225642b-4fea-4e70-b189-9cd21d83077b",
-    'Host': "127.0.0.1:8000",
-    'accept-encoding': "gzip, deflate",
-    'content-type': "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
-    'content-length': "389",
-    'Connection': "keep-alive",
+    'accept-encoding': "/",
+     'host': "127.0.0.1:8000",
+    'content-type': "application/json",
+    'connection': "keep-alive",
     'cache-control': "no-cache"
     }
 data = json.dumps(payload)
@@ -392,18 +382,12 @@ url = "http://127.0.0.1:8000/rentbook/"
 payload = {"name":"Rosa Souza","date_initial_rent":"2019-07-04","delivery_date_forecast":"2019-07-22","date_devolution":null,"librarian":1,"book":3}
 headers = {
     'Authorization': "Basic YWRtaW46bm92YVNlbmhhQA==",
-    'User-Agent': "PostmanRuntime/7.15.0",
-    'Accept': "*/*",
-    'Cache-Control': "no-cache",
-    'Postman-Token': "11772453-12b2-45af-b999-fbf3ccf89e2b,7bb0914d-5ace-49d9-8284-6ede6ffefa06",
-    'Host': "127.0.0.1:8000",
-    'accept-encoding': "gzip, deflate",
-    'content-type': "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
-    'content-length': "639",
-    'Connection': "keep-alive",
+    'accept-encoding': "/",
+     'host': "127.0.0.1:8000",
+    'content-type': "application/json",
+    'connection': "keep-alive",
     'cache-control': "no-cache"
     }
-   
 data = json.dumps(payload)
 response = requests.request("POST", url, data=data, headers=headers)
 
