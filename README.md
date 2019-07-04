@@ -19,7 +19,7 @@ $ py manage.py -m venv venv
 3. Instale o requirements.txt
 
 ```
-$ pip install requirements.txt
+$ pip install -r requirements.txt
 ```
 
 4. Migre o DB
