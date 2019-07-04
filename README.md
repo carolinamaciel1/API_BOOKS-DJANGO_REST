@@ -40,7 +40,7 @@ $ py manage.py runserver
 
 2. Logue como super user para ter acesso a api 
 
-_Se tentar ter acesso aos endpoints sem ter logado aparecerá uma mensagem de "Authentication credentials were not provided."_
+Se tentar ter acesso aos endpoints sem ter logado aparecerá uma mensagem de "Authentication credentials were not provided."
 
 ```
 login: admin
