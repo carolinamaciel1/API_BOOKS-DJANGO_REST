@@ -109,7 +109,7 @@ headers = {
     'cache-control': "no-cache"
     }
 data = json.dumps(payload)
-response = requests.request("POST", url, data=payload, headers=headers)
+response = requests.request("POST", url, data=data, headers=headers)
 
 
 ```
@@ -144,7 +144,7 @@ payload = {"name_book": "A menina e o porquinho", "author_book": "Autor desconhe
 
 headers = {...}
 data = json.dumps(payload)
-response = requests.request("PUT", url, data=payload, headers=headers)
+response = requests.request("PUT", url, data=data, headers=headers)
 
 ATUALIZANDO CAMPO ESPECÍFICO
 
@@ -152,7 +152,7 @@ payload = {"author_book": "Elwyn Brooks White"}
 
 headers = {...}
 data = json.dumps(payload)
-response = requests.request("PATCH", url, data=payload, headers=headers)
+response = requests.request("PATCH", url, data=data, headers=headers)
 
 
 
@@ -253,8 +253,8 @@ headers = {
     'Connection': "keep-alive",
     'cache-control': "no-cache"
     }
-
-response = requests.request("POST", url, data=payload, headers=headers)
+data = json.dumps(payload)
+response = requests.request("POST", url, data=data, headers=headers)
 
 ```
 
@@ -296,7 +296,7 @@ payload = {"book":2}
 
 headers = {...}
 data = json.dumps(payload)
-response = requests.request("PATCH", url, data=payload, headers=headers)
+response = requests.request("PATCH", url, data=data, headers=headers)
 ```
 
 ###### DELETE
@@ -403,8 +403,9 @@ headers = {
     'Connection': "keep-alive",
     'cache-control': "no-cache"
     }
-
-response = requests.request("POST", url, data=payload, headers=headers)
+   
+data = json.dumps(payload)
+response = requests.request("POST", url, data=data, headers=headers)
 
 ```
 ###### UPDATE 
@@ -440,7 +441,8 @@ url = "http://127.0.0.1:8000/rentbook/4/"
 
 payload = {"name":"Rosa Souza Gomes","date_initial_rent":"2019-07-04","delivery_date_forecast":"2019-07-22","date_devolution":null,"librarian":1,"book":4}
 headers = {...}
-response = requests.request("PUT", url, data=payload, headers=headers)
+data = json.dumps(payload)
+response = requests.request("PUT", url, data=data, headers=headers)
 
 
 ATUALIZANDO CAMPO ESPECÍFICO
