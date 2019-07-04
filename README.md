@@ -12,7 +12,7 @@ Aplicação crud de biblioteca.
 
 `cd venv > cd Scripts > activate `
 
-3. Install requirements
+3. Instale o requirements.txt
 
 `pip install requirements.txt`
 
