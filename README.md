@@ -8,7 +8,7 @@ Aplicação crud de biblioteca.
 
 2. Dentro do repositório crie uma máquina virtual para subir o servidor django 
 
-> py manage.py -m venv venv 
+`py manage.py -m venv venv`
 
 `cd venv > cd Scripts > activate `
 
@@ -17,9 +17,11 @@ Aplicação crud de biblioteca.
 `pip install requirements.txt`
 
 4. Migrate DB
+
 `py manage.py migrate`
 
 5. Suba o servidor django
+
 `py manage.py runserver`
 
 ## Como testar
