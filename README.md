@@ -6,7 +6,7 @@ Aplicação crud de biblioteca.
 
 ` git clone https://github.com/carolinamaciel1/django-application.git`
 
-2. Crie uma máquina virtual para subir o servidor django 
+2. Dentro do repositório crie uma máquina virtual para subir o servidor django 
 
 > py manage.py -m venv venv 
 
@@ -14,12 +14,12 @@ Aplicação crud de biblioteca.
 
 3. Install requirements
 
-> pip install requirements.txt
+`pip install requirements.txt`
 
 4. Migrate DB
-> py manage.py migrate
+`py manage.py migrate`
 
 5. Suba o servidor django
-> py manage.py runserver 
+`py manage.py runserver`
 
 ## Como testar
