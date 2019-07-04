@@ -43,6 +43,8 @@ $ py manage.py runserver
 Se tentar ter acesso aos endpoints sem ter logado aparecerá uma mensagem de "Authentication credentials were not provided."
 
 ```
+http://127.0.0.1:8000/admin
+
 login: admin
 senha: novaSenha@
 ```
