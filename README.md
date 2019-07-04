@@ -288,7 +288,7 @@ payload = {"date_register":"2019-07-04","edition":14,"book":3}
 
 headers = {...}
 data = json.dumps(payload)
-response = requests.request("PUT", url, data=payload, headers=headers)
+response = requests.request("PUT", url, data=data, headers=headers)
 
 ATUALIZANDO CAMPO ESPECÍFICO
 
