@@ -16,7 +16,7 @@ Aplicação crud de biblioteca.
 
 `pip install requirements.txt`
 
-4. Migrate DB
+4. Migre o DB
 
 `py manage.py migrate`
 
