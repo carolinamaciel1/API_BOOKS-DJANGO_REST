@@ -44,6 +44,10 @@ $ py manage.py runserver
 login: admin
 senha: novaSenha@
 ```
+Se tentar ter acesso aos endpoints sem ter logado aparecerá uma mensagem de  "Authentication credentials were not provided." como o da foto a seguir.
+
+
+
 
 
 
