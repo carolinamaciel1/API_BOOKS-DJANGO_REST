@@ -39,8 +39,7 @@ class RentBookViewSet(ModelViewSet):
     queryset = RentBook.objects.all()
     serializer_class = RentBookSerializer
     filter_backends = (SearchFilter, OrderingFilter,)
-    search_fields = ('^name', 'delivery_date_forecast')
-    lookup_field = 'name'
+    search_fields = ('id', '^name', 'delivery_date_forecast')
     ordering_fields = ('name', 'delivery_date_forecast')
     permission_classes = (IsAuthenticated, IsAdminUser)
 
