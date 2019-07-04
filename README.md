@@ -43,10 +43,26 @@ $ py manage.py runserver
 Se tentar ter acesso aos endpoints sem ter logado aparecerá uma mensagem de "Authentication credentials were not provided."
 
 ```
+---------
+VIA ADMIN 
+---------
+
 http://127.0.0.1:8000/admin
 
 login: admin
 senha: novaSenha@
+
+------------
+VIA POSTMAN 
+------------
+
+Authorization 
+
+Type > Basic Auth
+
+username: admin
+senha: novaSenha@
+
 ```
 
 ## Navegando pelo endpoint /books
