@@ -90,6 +90,7 @@ Em http://127.0.0.1:8000/books é possível ter acesso ao json com as informaç�
  PYTHON REQUEST 
 ----------------
 
+import json
 import requests
 
 url = "http://127.0.0.1:8000/books/"
@@ -133,6 +134,7 @@ ex: http://127.0.0.1:8000/books/3/
 
 ATUALIZANDO TODOS OS CAMPOS 
 
+import json
 url = "../books/36/"
 
 payload = {"name_book": "A menina e o porquinho", "author_book": "Autor desconhecido", "publishing_company":"Editora desconhecida","registration_date":"2019-07-04"}
@@ -143,6 +145,7 @@ response = requests.request("PUT", url, data=data, headers=headers)
 
 ATUALIZANDO CAMPO ESPECÍFICO
 
+import json
 payload = {"author_book": "Elwyn Brooks White"}
 
 headers = {...}
@@ -174,6 +177,7 @@ ex: http://127.0.0.1:8000/books/6/
  PYTHON REQUEST 
 ----------------
 
+import json
 url = "../books/36/"
 headers = {...}
 response = requests.request("DELETE", url, headers=headers)
@@ -189,14 +193,19 @@ FRONT END DJANGO REST
 
 Em http://127.0.0.1:8000/books/ temos a nossa disposição um botão "FILTERS", nele podemos fazer buscas no endpoint books. Podemos buscar por id, name book, author book, registration date e podemos ordenar o registration date em ordem ascending e descending.
 
-Exemplos de busca:
+Exemplo de busca:
 
 http://127.0.0.1:8000/books/?search=A+menina+que+roubava+livros
+
+Exemplo de filtro e ordenação:
+
+http://127.0.0.1:8000/books/?ordering=registration_date
 
 ----------------
  PYTHON REQUEST 
 ----------------
 
+import json
 import requests
 
 url = "http://127.0.0.1:8000/books/"
@@ -230,6 +239,7 @@ Em http://127.0.0.1:8000/copybook/ é possível ter acesso ao json com as inform
  PYTHON REQUEST 
 ----------------
 
+import json
 import requests
 
 url = "http://127.0.0.1:8000/copybook/"
@@ -272,6 +282,7 @@ ex: http://127.0.0.1:8000/copybook/3/
 
 ATUALIZANDO TODOS OS CAMPOS 
 
+import json
 url = "../copybooks/3/"
 
 payload = {"date_register":"2019-07-04","edition":14,"book":3}
@@ -282,6 +293,7 @@ response = requests.request("PUT", url, data=data, headers=headers)
 
 ATUALIZANDO CAMPO ESPECÍFICO
 
+import json
 payload = {"book":2}
 
 headers = {...}
@@ -338,6 +350,7 @@ http://127.0.0.1:8000/copybook/?ordering=edition&search=12
  PYTHON REQUEST 
 ----------------
 
+import json
 import requests
 
 url = "http://127.0.0.1:8000/books/"
@@ -375,6 +388,7 @@ Em http://127.0.0.1:8000/rentbook/ é possível ter acesso ao json com as inform
  PYTHON REQUEST 
 ----------------
 
+import json
 import requests
 
 url = "http://127.0.0.1:8000/rentbook/"
@@ -419,6 +433,7 @@ ex: http://127.0.0.1:8000/rentbook/4/
 
 ATUALIZANDO TODOS OS CAMPOS 
 
+import json
 import requests
 
 url = "http://127.0.0.1:8000/rentbook/4/"
@@ -431,6 +446,7 @@ response = requests.request("PUT", url, data=data, headers=headers)
 
 ATUALIZANDO CAMPO ESPECÍFICO
 
+import json
 import requests
 
 url = "http://127.0.0.1:8000/rentbook/4/"
@@ -479,10 +495,19 @@ FRONT END DJANGO REST
 
 Em http://127.0.0.1:8000/rentbook/ temos a nossa disposição um botão "FILTERS", nele podemos fazer buscas no endpoint copybook. Podemos buscar por id, name e delivery date forecast, podemos ordenar name e delivery date forecast  em ordem ascending e descending.
 
+Exemplo de busca:
+
+http://127.0.0.1:8000/rentbook/?search=Anna
+
+Exemplo de filtro e ordenação:
+
+http://127.0.0.1:8000/rentbook/?ordering=-name&search=Anna
+
 ----------------
  PYTHON REQUEST 
 ----------------
 
+import json
 import requests
 
 url = ".../rentbook/"
