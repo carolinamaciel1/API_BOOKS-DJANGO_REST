@@ -52,9 +52,7 @@ senha: novaSenha@
 3. Navegando pelo endpoint /books
 
 ```
-Em http://127.0.0.1:8000/books é possível ter acesso ao json com as informações da api, para adicionar um novo objeto preencha com as seguintes informações: 
-
-nome do livro, autor do livro, data de registro do livro na biblioteca, editora que publicou o livro.
+Em http://127.0.0.1:8000/books é possível ter acesso ao json com as informações da api, para adicionar um novo objeto preencha com os campos nome do livro, autor do livro, data de registro do livro na biblioteca, editora que publicou o livro com informações válidas.
 
 {
     "name_book": [
