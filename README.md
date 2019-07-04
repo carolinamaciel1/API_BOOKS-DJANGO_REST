@@ -49,10 +49,10 @@ login: admin
 senha: novaSenha@
 ```
 
-3. Navegando pelo endpoint /books
-
+## Navegando pelo endpoint /books
+###### CREATE
 ```
-Em http://127.0.0.1:8000/books é possível ter acesso ao json com as informações da api, para adicionar um novo objeto preencha com os campos nome do livro, autor do livro, data de registro do livro na biblioteca, editora que publicou o livro com informações válidas.
+Em http://127.0.0.1:8000/books é possível ter acesso ao json com as informações da api, para adicionar um novo objeto preencha  os campos nome do livro, autor do livro, data de registro do livro na biblioteca, editora que publicou o livro com informações válidas. Clique no botão "POST" para criar um novo objeto.
 
 {
     "name_book": [
@@ -66,3 +66,41 @@ Em http://127.0.0.1:8000/books é possível ter acesso ao json com as informaç�
     ]
 }
 ```
+###### UPDATE 
+
+```
+Em http://127.0.0.1:8000/books/id/ é possível ter acesso ao json com as informações de cada livro individualmente, modifique as informações de algum campo e clique no botão "PUT" para aplicar as mudaças a algum campo. 
+
+ex: http://127.0.0.1:8000/books/3/
+
+{
+    "id": 3,
+    "name_book": "Alice: As aventuras de Alice no país das maravilhas e através do espelho e oque encontrou por lá",
+    "author_book": "Lewis Carroll",
+    "publishing_company": "Zahar",
+    "registration_date": "2019-07-02"
+}
+
+```
+###### DELETE
+
+```
+Em http://127.0.0.1:8000/books/id/ além de ter acesso ao json com as informações de cada livro individualmente, temos também a disposição um botão para deletar o livro específico. Após clicar em "DELETE" e na confirmação "DELETE" o livro é excluído do db e deixa de existir na API.
+
+Se você excluir o id e tentar buscar o objeto que foi excluído, uma mensagem de "Not found" irá aparecer.
+
+ex: http://127.0.0.1:8000/books/6/
+
+{
+    "detail": "Not found."
+}
+```
+###### SEARCH AND FILTERS
+
+```
+Em http://127.0.0.1:8000/books/ temos a nossa disposição um botão "FILTERS", nele podemos fazer buscas no endpoint books. Podemos buscar por edition e date register e podemos ordenar o registration date em ordem ascending e descending.
+```
+
+
+
+
