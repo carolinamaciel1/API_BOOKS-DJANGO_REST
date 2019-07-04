@@ -15,7 +15,8 @@ class BookViewSet(ModelViewSet):
     filter_backends = (SearchFilter, OrderingFilter,)
     search_fields = ('id', 'name_book', 'author_book', 'registration_date')
     ordering_fields = ('registration_date',)
-    permission_classes = (IsAuthenticated, IsAdminUser )
+    permission_classes = (IsAuthenticated, IsAdminUser)
+
 
 
 class CopyBookViewSet(ModelViewSet):
