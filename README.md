@@ -28,9 +28,22 @@ $ pip install requirements.txt
 $ py manage.py migrate
 ```
 
-5. Suba o servidor django
+
+
+## Para efetuar testes no sistema
+
+1. Suba o servidor django
+
 ```
 $ py manage.py runserver
 ```
 
-## Como testar
+2. Logue como super user para ter acesso a api 
+
+```
+login: admin
+senha: novaSenha@
+```
+
+
+
