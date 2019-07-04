@@ -12,10 +12,9 @@ git clone https://github.com/carolinamaciel1/django-application.git
 
 ```
 py manage.py -m venv venv
-
-** cd venv > cd Scripts > activate **
 ```
-cd venv > cd Scripts > activate `
+**cd venv > cd Scripts > activate**
+
 
 3. Instale o requirements.txt
 
